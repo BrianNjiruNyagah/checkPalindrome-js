@@ -1,0 +1,21 @@
+function checkPalindrome(inputString) {
+    var i;
+    var tell;
+    var a = Math.trunc(inputString.length/2);
+    //sorting out single characters
+    if(inputString.length==1){
+        tell = "true";
+    }else{
+    
+    //section for confirming if the string is a palindrome
+    
+        for(i = 0;i!=a;i++){
+            if(inputString.charAt(i)==inputString.charAt(inputString.length-(i+1))){
+                tell="true";
+            }else{
+                tell="";
+            }
+        }
+    }
+    return tell;
+}
